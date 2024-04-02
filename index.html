@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Decorations</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-md-6">
+                <div class="first-row-left h-100">
+                    <div class="title mb-3">
+                        Украшения<br> собственного<br> производства
+                    </div>
+                    <div class="text mb-3">
+                        Все изделия создаются с любовью<br> для каждого клиента
+                    </div>
+                    <a href="#" class="btn button">Сделать расчет и заказ</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="first-row-right d-flex g-2">
+                    <div class="img-1">
+                        <img src="images/img-1.png" alt="">
+                    </div>
+                    <div class="img-2">
+                        <img src="images/border-line.png" alt="">
+                    </div>
+                    <div class="img-3">
+                        <img src="images/img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row second-row-title">
+            <div class="col-12 text-center">
+                Наши изделия
+            </div>
+        </div>
+        <div class="row second-row-images text-center g-2">
+            <div class="col-lg-5 col-md-6 left-img mb-3">
+                <img src="images/img-3.jpg" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 middle-images mb-3">
+                <img class="middle-top" src="images/img-4-1.jpg" alt="">
+                <img class="middle-bottom" src="images/img-4-2.jpg" alt="">
+            </div>
+            <div class="col-lg-5 col-md-6 right-img mb-3">
+                <img src="images/img-5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container cost">
+        <div class="cost-title">
+            <img src="images/round-img.svg" alt="...">
+        </div>
+        <div class="cost-calc">
+            <form class="form" action="">
+                <p class="form-text mb-2">
+                    Выберите изделие:
+                </p>
+                <select class="form-select mb-3" id="selectProduct">
+                    <option value="0" selected disabled>Выбрать из списка</option>
+                    <option value="100">Braslet ($100)</option>
+                    <option value="90">Ring ($90)</option>
+                    <option value="70">Earrings ($70)</option>
+                    
+                </select>
+                <p class="form-text mb-2">
+                    Укажите количество:
+                </p>
+                <input id="quantityProduct" class="form-input mb-3" type="number" value="0" min="0">
+                <button class="link mb-3" id="btnProduct" type="button">Рассчитать</button>
+            </form>
+            <div id="infoProduct" class="total" style="display:none;">
+                <p class="total-price mb-3">Итог: $<span id="priceProduct">1000</span> </p>
+                <p class="form-text">Оставьте заявку по почте: <a href="mailto:order@jewelery.com"></a><a href="mailto:order@jewelery.com">order@jewelery.com</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
